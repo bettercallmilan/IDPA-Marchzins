@@ -27,11 +27,10 @@ Dieses Tool ermöglicht es Kundenberatern, diese Bonusberechnungen schnell und f
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
-- Lokale Speicherung nur für Voreinstellungen
 
 ## Projektkontext
 
-Dieses Projekt ist Teil der Interdisziplinären Projektarbeit (IDPA) für Informatiker/in EFZ an der Kantonsschule Baden.
+Dieses Projekt ist Teil der Interdisziplinären Projektarbeit (IDPA).
 
 ## Entwicklungsstatus
 
