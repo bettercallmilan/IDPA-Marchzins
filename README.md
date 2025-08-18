@@ -38,4 +38,4 @@ Dieses Projekt ist Teil der Interdisziplinären Projektarbeit (IDPA).
 
 ---
 
-Ivan Kos, Tim Tafolli, Milan Jankovic, Szymon Rybicki | IDPA 2024
+Ivan Kos, Tim Tafolli, Milan Jankovic, Szymon Rybicki | IDPA 2025
