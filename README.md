@@ -26,7 +26,7 @@ Dieses Tool ermöglicht es Kundenberatern, diese Bonusberechnungen schnell und f
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript
 
 ## Projektkontext
 
