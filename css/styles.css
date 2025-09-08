@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #1a5276;
+    --secondary-color: #2980b9;
+    --accent-color: #3498db;
+    --light-bg: #ecf0f1;
+    --dark-text: #2c3e50;
+    --light-text: #ffffff;
+    --error-color: #e74c3c;
+    --success-color: #2ecc71;
+    --border-color: #bdc3c7;
+    --hover-color: #154360;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+}
+
+.language-selector button {
+    background: none;
+    border: 1px solid var(--border-color);
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.language-selector button.active {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .calculator {
+        flex-direction: column;
+    }
+    
+    .input-section {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+}
