@@ -17,6 +17,83 @@
             <h1 id="title">Marchzins-Bonus Kalkulator</h1>
             <p id="subtitle">Goldstein & Klaster Bank AG</p>
         </div>
+
+        <div class="calculator">
+            <div class="input-section">
+                <h2 id="customer-data">Kundendaten</h2>
+                
+                <div class="input-group">
+                    <label for="birthday" id="birthday-label">Geburtsdatum:</label>
+                    <input type="date" id="birthday" required>
+                    <div class="error-message" id="birthday-error"></div>
+                </div>
+                
+                <div class="input-group">
+                    <label for="capital" id="capital-label">Sparkapital (CHF):</label>
+                    <input type="number" id="capital" step="0.01" min="0" required>
+                    <div class="error-message" id="capital-error"></div>
+                </div>
+
+                <h2 id="bank-data">Bankdaten</h2>
+                
+                <div class="input-group">
+                    <label for="regular-rate" id="regular-rate-label">Regulärer Zinssatz (%):</label>
+                    <input type="number" id="regular-rate" step="0.01" min="0" max="10" value="0.25">
+                    <div class="error-message" id="regular-rate-error"></div>
+                </div>
+                
+                <div class="input-group">
+                    <label for="bonus-rate" id="bonus-rate-label">Bonus Zinssatz (%):</label>
+                    <input type="number" id="bonus-rate" step="0.01" min="0" max="10" value="1.0">
+                    <div class="error-message" id="bonus-rate-error"></div>
+                </div>
+                
+                <div class="input-group">
+                    <label for="tax-rate" id="tax-rate-label">Verrechnungssteuer (%):</label>
+                    <input type="number" id="tax-rate" step="0.01" min="0" max="100" value="35">
+                    <div class="error-message" id="tax-rate-error"></div>
+                </div>
+
+                <div class="buttons">
+                    <button id="calculate-btn" class="primary-btn">Berechnen</button>
+                    <button id="reset-btn">Zurücksetzen</button>
+                </div>
+            </div>
+
+            <div class="result-section" id="result-section">
+                <h2 id="result-title">Ergebnis</h2>
+                <div id="results-container" class="hidden">
+                    <div class="result-row">
+                        <span id="period-label">Bonuszeitraum:</span>
+                        <span id="period-value"></span>
+                    </div>
+                    <div class="result-row">
+                        <span id="days-label">Tage mit Bonus:</span>
+                        <span id="days-value"></span>
+                    </div>
+                    <div class="result-row">
+                        <span id="regular-interest-label">Reguläre Zinsen:</span>
+                        <span id="regular-interest-value"></span>
+                    </div>
+                    <div class="result-row">
+                        <span id="bonus-interest-label">Bonus Zinsen:</span>
+                        <span id="bonus-interest-value"></span>
+                    </div>
+                    <div class="result-row total">
+                        <span id="gross-total-label">Bruttozinsen Total:</span>
+                        <span id="gross-total-value"></span>
+                    </div>
+                    <div class="result-row">
+                        <span id="tax-amount-label">Verrechnungssteuer:</span>
+                        <span id="tax-amount-value"></span>
+                    </div>
+                    <div class="result-row total-net">
+                        <span id="net-total-label">Nettozinsen Total:</span>
+                        <span id="net-total-value"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
