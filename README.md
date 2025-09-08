@@ -32,10 +32,6 @@ Dieses Tool ermöglicht es Kundenberatern, diese Bonusberechnungen schnell und f
 
 Dieses Projekt ist Teil der Interdisziplinären Projektarbeit (IDPA).
 
-## Entwicklungsstatus
-
-**In Entwicklung** - Initial Setup
-
 ---
 
 Ivan Kos, Tim Tafolli, Milan Jankovic, Szymon Rybicki | IDPA 2025
