@@ -175,6 +175,14 @@ button {
     color: var(--primary-color);
 }
 
+.footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    color: var(--dark-text);
+    font-size: 0.9em;
+}
+
 .hidden {
     display: none;
 }
