@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>March Interest Bonus Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="language-selector">
+        <button id="de-btn">DE</button>
+        <button id="en-btn" class="active">EN</button>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1 id="title">March Interest Bonus Calculator</h1>
+            <p id="subtitle">Goldstein & Klaster Bank Ltd.</p>
+        </div>
+
+        <div class="calculator">
+            <div class="input-section">
+                <h2 id="customer-data">Customer Data</h2>
+                
+                <div class="input-group">
+                    <label for="birthday" id="birthday-label">Date of Birth:</label>
+                    <input type="date" id="birthday" required>
+                    <div class="error-message" id="birthday-error"></div>
+                </div>
+                
+                <div class="input-group">
+                    <label for="capital" id="capital-label">Savings Capital (CHF):</label>
+                    <input type="number" id="capital" step="0.01" min="0" required>
+                    <div class="error-message" id="capital-error"></div>
+                </div>
+
+                <h2 id="bank-data">Bank Data</h2>
+                
+                <div class="input-group">
+                    <label for="regular-rate" id="regular-rate-label">Regular Interest Rate (%):</label>
+                    <input type="number" id="regular-rate" step="0.01" min="0" max="10" value="0.25">
+                    <div class="error-message" id="regular-rate-error"></div>
+                </div>
+                
+                <div class="input-group">
+                    <label for="bonus-rate" id="bonus-rate-label">Bonus Interest Rate (%):</label>
+                    <input type="number" id="bonus-rate" step="0.01" min="0" max="10" value="1.0">
+                    <div class="error-message" id="bonus-rate-error"></div>
+                </div>
+                
+                <div class="input-group">
+                    <label for="tax-rate" id="tax-rate-label">Withholding Tax (%):</label>
+                    <input type="number" id="tax-rate" step="0.01" min="0" max="100" value="35">
+                    <div class="error-message" id="tax-rate-error"></div>
+                </div>
+
+                <div class="buttons">
+                    <button id="calculate-btn" class="primary-btn">Calculate</button>
+                    <button id="reset-btn">Reset</button>
+                </div>
+            </div>
+
+            <div class="result-section" id="result-section">
+                <h2 id="result-title">Result</h2>
+                <div id="results-container" class="hidden">
+                    <div class="result-row">
+                        <span id="period-label">Bonus Period:</span>
+                        <span id="period-value"></span>
+                    </div>
+                    <div class="result-row">
+                        <span id="days-label">Days with Bonus:</span>
+                        <span id="days-value"></span>
+                    </div>
+                    <div class="result-row">
+                        <span id="regular-interest-label">Regular Interest:</span>
+                        <span id="regular-interest-value"></span>
+                    </div>
+                    <div class="result-row">
+                        <span id="bonus-interest-label">Bonus Interest:</span>
+                        <span id="bonus-interest-value"></span>
+                    </div>
+                    <div class="result-row total">
+                        <span id="gross-total-label">Gross Interest Total:</span>
+                        <span id="gross-total-value"></span>
+                    </div>
+                    <div class="result-row">
+                        <span id="tax-amount-label">Withholding Tax:</span>
+                        <span id="tax-amount-value"></span>
+                    </div>
+                    <div class="result-row total-net">
+                        <span id="net-total-label">Net Interest Total:</span>
+                        <span id="net-total-value"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script-en.js"></script>
+</body>
+</html>
